@@ -1,0 +1,7 @@
+django==4.2.5  # Version de Django (ou une autre version stable)
+gunicorn==20.1.0  # Serveur WSGI pour déployer l'application
+django-allauth==0.54.0  # Authentification sociale (Google, Facebook, etc.)
+psycopg2-binary==2.9.6  # Client PostgreSQL si tu utilises PostgreSQL
+dj-database-url==1.2.0  # Gestion des bases de données via URL
+whitenoise==6.5.0  # Gestion des fichiers statiques en production
+python-decouple==3.8  # Gestion des variables d'environnement

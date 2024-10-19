@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: kondebili
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn kondebili.wsgi:application --bind 0.0.0.0:$PORT"
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: kondebili.settings
+      - key: SECRET_KEY
+        value: "your-secret-key"
+      - key: ALLOWED_HOSTS
+        value: "render.com"
