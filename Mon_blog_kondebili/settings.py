@@ -25,7 +25,13 @@ SECRET_KEY = "django-insecure-vc)3su^()nn)e%r9jsz^k6%w5)^v-ib0fb1@_&k)g_bf$&wt3f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# mon_blog_kondebili/settings.py
+ALLOWED_HOSTS = [
+    'mon-app-kondebili.onrender.com',
+    'localhost',
+    '127.0.0.1',
+]
+
 
 
 # Application definition
