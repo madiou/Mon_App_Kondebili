@@ -1,13 +1,13 @@
 services:
   - type: web
-    name: Mon_app_kondebili
+    name: kondebili
     env: python
     plan: free
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn kondebili.wsgi:application --bind 0.0.0.0:$PORT"
+    startCommand: "gunicorn mon_blog_kondebili.wsgi:application --bind 0.0.0.0:$PORT"
     envVars:
       - key: DJANGO_SETTINGS_MODULE
-        value: Mon_app_kondebili.settings
+        value: mon_blog_kondebili.settings
       - key: SECRET_KEY
         value: "your-secret-key"
       - key: ALLOWED_HOSTS
